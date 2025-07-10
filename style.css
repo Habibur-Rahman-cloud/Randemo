@@ -1,0 +1,858 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'poppins';
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.main{
+    overflow: hidden;
+    width: 100%;
+}
+.main .navbar{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    border-bottom: 1.5px solid #000;
+    background: linear-gradient(#d97dc752, #fff);
+}
+.main .navbar .logo img{
+    width: 14vw;
+    filter: drop-shadow(2px 3px 1px black);
+}
+.main .navbar .right-nav .links #about-me, #help-me{
+    padding: 0px 12px;
+}
+/* --------------------------------------------- */
+.main .service{
+    width: 100%;
+    height: 100vh;
+    margin: 25px auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.main .service .top-box, .bottom-box{
+    width: 90%;
+    margin: 20px;
+    display: flex;
+}
+.main .service .box{
+    width: 45%;
+    height: 240px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid #000;
+    background-color: #da65c3;
+}
+.main .service .box #title, #more-info{
+    font-size: 40px;
+    color: #fff;
+}
+.main .service .service4 #more-info{
+    font-size: 25px;
+    color: #fff;
+    justify-content: center;
+}
+.main .service .service6 #title{
+    font-size: 40px;
+    color: #fff;
+}
+.main .service .service6{
+    width: 45%;
+    height: 240px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    border: 2px solid #000;
+    background-color: #da65c3;
+}
+.main .service .service6 #more-info{
+    display: flex;
+    gap: 12px;
+    padding: 2px 36px;
+    margin-top: 8px;
+}
+.main .service .service6 #more-info img{
+    width: 55px;
+    height: 55px;
+}
+.main .service .service6 #go-to-page{
+    padding: 18px;
+    border: 2px solid #000;
+    font-weight: bolder;
+    border-radius: 25px;
+    position: relative;
+    margin-top: 10px;
+}
+.main .service .box #go-to-page{
+    padding: 20px;
+    border: 2px solid #000;
+    font-weight: bolder;
+    border-radius: 25px;
+    position: relative;
+    margin-top: 20px;
+}
+
+/* ----------ad-right-side--------- */
+.ad-right-side{
+    position: absolute;
+    width: 12vw;
+    height: 100vh;
+    right: 0%;
+    top: 11.5%;
+    background: #fff;
+}
+.ad-right-side .ad1,.ad2,.ad3{
+    width: 95%;
+    height: 180px;
+    border: 1px solid #000;
+    background: #ccc;
+}
+.ad-right-side .ad1,.ad2,.ad3, span{
+    text-align: center;
+    background: none;
+}
+/* ------------------------------- */
+.main .social-ad{
+    width: 100%;
+    background: #000;
+    padding: 25px;
+    font-size: 100px;
+    text-align: center;
+}
+.main .social-ad #social-point{
+    color: #da65c3;
+    text-decoration: none;
+}
+.main .social-ad i{
+    color: aliceblue;
+}
+/* --------------------------- */
+.main .section-4{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.main .section-4 .left-part, .right-part{
+    width: 50%;
+}
+.main .section-4 .right-part{
+    align-items: center;
+    justify-content: center;
+}
+.main .section-4 .left-part #info{
+    font-size: 40px;
+    padding: 40px;
+}
+
+.main .section-4 .right-part #ad-box{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background: #ccc;
+}
+/* ----------------------- */
+.main .footer{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    border-top: 1px solid #000;
+    background: #000;
+}
+.main .footer .foot-logo img{
+    width: 25%;
+}
+.main .footer .follow-on{
+    font-size: 30px;
+}
+.main .footer .follow-on #insta-icon{
+    color: #ccc;
+    text-decoration: none;
+}
+.main .footer .more-foot-action{
+    border-left: 1px solid #fff;
+}
+.main .footer .more-foot-action #back-to-top{
+    color: azure;
+    text-decoration: none;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+/* ----------ad-right-side--------- */
+.ad-right-side{
+    position: relative;
+    display: flex;
+    /* margin-left: 60px; */
+    height: 200px;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.ad-right-side .ad1,.ad2,.ad3{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #000;
+    background: #ccc;
+}
+.ad-right-side .ad1,.ad2,.ad3, span{
+    text-align: center;
+    background: none;
+}
+.ad-right-side .ad3{
+    width: 100%;
+    border: none;
+    background: #ccc;
+}
+/* ------------------------------- */
+    .main .service .box #title{
+    font-size: 20px;
+    color: #fff;
+}
+.main .service .box #more-info{
+    color: #000;
+    font-size: 18px;
+}
+.main .service .box{
+    width: 45%;
+    height: 200px;
+}
+.main .service .box #go-to-page{
+    padding: 16px;
+}
+
+.main .service .bottom-box .service3 #title{
+    font-size: 18px;
+    padding: 1px;
+}
+.main .service .bottom-box .service3 #more-info{
+    font-size: 12px;
+    color: #000;
+}
+.main .service .bottom-box .service3 #go-to-page{
+    padding: 12px;
+    margin-top: 8px;
+}
+.main .service .service3 #more-info{
+    font-size: 12px;
+    color: #000;
+    justify-content: center;
+}
+
+.main .service .bottom-box .service4 #title{
+    font-size: 17px;
+}
+.main .service .bottom-box .service4 #more-info{
+    font-size: 8.5px;
+    color: #000;
+}
+.main .service .bottom-box .service4 #go-to-page{
+    padding: 12px;
+    margin-top: 8px;
+}
+.main .service .service4 #more-info{
+    font-size: 12px;
+    color: #000;
+    justify-content: center;
+}
+.main .service .bottom-box .service5 #more-info{
+    font-size: 17px;
+    color: #000;
+}
+.main .service .bottom-box .service5 #go-to-page{
+    padding: 12px;
+    margin-top: 10px;
+}
+.main .service .service6 #title{
+    font-size: 20px;
+    color: #fff;
+}
+.main .service .service6{
+    width: 45%;
+    height: 200px;
+}
+.main .service .service6 #more-info{
+    display: flex;
+    gap: 2px;
+    padding: 0px 2px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.main .service .service6 #more-info img{
+    width: 35px;
+    height: 35px;
+}
+
+.main .service .service6 #go-to-page{
+    padding: 12px;
+}
+/* ------------------------------- */
+.main .social-ad{
+    font-size: 50px;
+    display: flex;
+}
+/* --------------------------- */
+.main .section-4{
+    padding-bottom: 17px;
+}
+.main .section-4 .left-part #info{
+    font-size: 18px;
+}
+/* ----------------------- */
+/* ----------------------- */
+.main .footer{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    border-top: 1px solid #000;
+    background: #000;
+}
+.main .footer .foot-logo img{
+    width: 20%;
+}
+.main .footer .follow-on{
+    width: 30%;
+    font-size: 15px;
+}
+.main .footer .follow-on #insta-icon{
+    color: #ccc;
+    text-decoration: none;
+}
+.main .footer .more-foot-action{
+    font-size: 12px;
+    border-left: 1px solid #fff;
+}
+.main .footer .more-foot-action #back-to-top{
+    color: azure;
+    text-decoration: none;
+}
+ }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .ad-right-side{
+    position: relative;
+    display: flex;
+    margin-left: 150px;
+    height: 220px;
+    gap: 25px;
+}
+.ad-right-side .ad1,.ad2,.ad3{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #000;
+    background: #ccc;
+}
+.ad-right-side .ad1,.ad2,.ad3, span{
+    height: 200px;
+    text-align: center;
+    background: none;
+}
+.ad-right-side .ad3{
+    width: 100%;
+    border: none;
+    background: #ccc;
+}
+/* ------------------------------- */
+    .main .service .box #title{
+    font-size: 20px;
+    color: #fff;
+}
+.main .service .box #more-info{
+    color: #000;
+    font-size: 20px;
+}
+.main .service .box{
+    width: 45%;
+    height: 200px;
+}
+.main .service .box #go-to-page{
+    padding: 16px;
+}
+.main .service .service4 #more-info{
+    font-size: 12px;
+    color: #000;
+    justify-content: center;
+}
+.main .service .service6 #title{
+    font-size: 20px;
+    color: #fff;
+}
+.main .service .service6{
+    width: 45%;
+    height: 200px;
+}
+.main .service .service6 #more-info{
+    display: flex;
+    gap: 2px;
+    padding: 0px 2px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.main .service .service6 #more-info img{
+    width: 35px;
+    height: 35px;
+}
+
+.main .service .service6 #go-to-page{
+    padding: 12px;
+}
+/* ------------------------------- */
+.main .social-ad{
+    font-size: 52px;
+    display: flex;
+}
+/* --------------------------- */
+.main .section-4{
+    padding-bottom: 17px;
+}
+.main .section-4 .left-part #info{
+    font-size: 18px;
+}
+/* ----------------------- */
+/* ----------------------- */
+.main .footer{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    border-top: 1px solid #000;
+    background: #000;
+}
+.main .footer .foot-logo img{
+    width: 20%;
+}
+.main .footer .follow-on{
+    width: 30%;
+    font-size: 15px;
+}
+.main .footer .follow-on #insta-icon{
+    color: #ccc;
+    text-decoration: none;
+}
+.main .footer .more-foot-action{
+    font-size: 12px;
+    border-left: 1px solid #fff;
+}
+.main .footer .more-foot-action #back-to-top{
+    color: azure;
+    text-decoration: none;
+}
+ }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .ad-right-side{
+    position: relative;
+    display: flex;
+    height: 220px;
+    gap: 30px;
+    margin-left: 250px;
+    width: 30vw;
+}
+.ad-right-side .ad1,.ad2,.ad3{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #000;
+    background: #ccc;
+}
+.ad-right-side .ad1,.ad2,.ad3, span{
+    height: 220px;
+    text-align: center;
+    background: none;
+}
+.ad-right-side .ad3{
+    border: none;
+}
+/* ------------------------------- */
+    .main .service .box #title{
+    font-size: 20px;
+    color: #fff;
+}
+.main .service .box #more-info{
+    color: #000;
+    font-size: 20px;
+}
+.main .service .box{
+    width: 45%;
+    height: 200px;
+}
+.main .service .box #go-to-page{
+    padding: 16px;
+}
+.main .service .service4 #more-info{
+    font-size: 12px;
+    color: #000;
+    justify-content: center;
+}
+.main .service .service6 #title{
+    font-size: 20px;
+    color: #fff;
+}
+.main .service .service6{
+    width: 45%;
+    height: 200px;
+}
+.main .service .service6 #more-info{
+    display: flex;
+    gap: 2px;
+    padding: 0px 2px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.main .service .service6 #more-info img{
+    width: 35px;
+    height: 35px;
+}
+
+.main .service .service6 #go-to-page{
+    padding: 12px;
+}
+/* ------------------------------- */
+.main .social-ad{
+    font-size: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* --------------------------- */
+.main .section-4{
+    padding-bottom: 17px;
+}
+.main .section-4 .left-part #info{
+    font-size: 18px;
+}
+/* ----------------------- */
+/* ----------------------- */
+.main .footer{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    border-top: 1px solid #000;
+    background: #000;
+}
+.main .footer .foot-logo img{
+    width: 20%;
+}
+.main .footer .follow-on{
+    width: 30%;
+    font-size: 15px;
+}
+.main .footer .follow-on #insta-icon{
+    color: #ccc;
+    text-decoration: none;
+}
+.main .footer .more-foot-action{
+    font-size: 12px;
+    border-left: 1px solid #fff;
+}
+.main .footer .more-foot-action #back-to-top{
+    color: azure;
+    text-decoration: none;
+}
+ }
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    .ad-right-side{
+    position: relative;
+    display: flex;
+    height: 240px;
+    margin-left: 340px;
+    gap: 30px;
+}
+.ad-right-side .ad1,.ad2,.ad3{
+    width: 100%;
+    border: 1px solid #000;
+    background: #ccc;
+}
+.ad-right-side .ad1,.ad2,.ad3, span{
+    height: 220px;
+    text-align: center;
+    background: none;
+}
+.ad-right-side .ad3{
+    border: none;
+}
+/* ------------------------------- */
+.main .top-box, .bottom-box{
+    justify-content: center;
+}
+    .main .service .box #title{
+    font-size: 20px;
+    color: #fff;
+}
+.main .service .box #more-info{
+    color: #000;
+    font-size: 20px;
+}
+.main .service .box{
+    width: 45%;
+    height: 200px;
+}
+.main .service .box #go-to-page{
+    padding: 16px;
+}
+.main .service .service4 #more-info{
+    font-size: 12px;
+    color: #000;
+    justify-content: center;
+}
+.main .service .service6 #title{
+    font-size: 20px;
+    color: #fff;
+}
+.main .service .service6{
+    width: 45%;
+    height: 200px;
+}
+.main .service .service6 #more-info{
+    display: flex;
+    gap: 2px;
+    padding: 0px 2px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.main .service .service6 #more-info img{
+    width: 35px;
+    height: 35px;
+}
+
+.main .service .service6 #go-to-page{
+    padding: 12px;
+}
+/* ------------------------------- */
+.main .social-ad{
+    font-size: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* --------------------------- */
+.main .section-4{
+    padding-bottom: 17px;
+}
+.main .section-4 .left-part #info{
+    font-size: 18px;
+}
+/* ----------------------- */
+/* ----------------------- */
+.main .footer{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    border-top: 1px solid #000;
+    background: #000;
+}
+.main .footer .foot-logo img{
+    width: 20%;
+}
+.main .footer .follow-on{
+    width: 30%;
+    font-size: 15px;
+}
+.main .footer .follow-on #insta-icon{
+    color: #ccc;
+    text-decoration: none;
+}
+.main .footer .more-foot-action{
+    font-size: 12px;
+    border-left: 1px solid #fff;
+}
+.main .footer .more-foot-action #back-to-top{
+    color: azure;
+    text-decoration: none;
+}
+ }
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+    .ad-right-side{
+    position: relative;
+    display: flex;
+    height: 240px;
+    margin-left: 420px;
+    gap: 50px;
+}
+.ad-right-side .ad1,.ad2,.ad3{
+    width: 100%;
+    border: 1px solid #000;
+    background: #ccc;
+}
+.ad-right-side .ad1,.ad2,.ad3, span{
+    height: 220px;
+    text-align: center;
+    background: none;
+}
+.ad-right-side .ad3{
+    border: none;
+}
+/* ------------------------------- */
+.main .top-box, .bottom-box{
+    justify-content: center;
+}
+    .main .service .box #title{
+    font-size: 20px;
+    color: #fff;
+}
+.main .service .box #more-info{
+    color: #000;
+    font-size: 20px;
+}
+.main .service .box{
+    width: 45%;
+    height: 200px;
+}
+.main .service .box #go-to-page{
+    padding: 16px;
+}
+.main .service .service4 #more-info{
+    font-size: 12px;
+    color: #000;
+    justify-content: center;
+}
+.main .service .service6 #title{
+    font-size: 20px;
+    color: #fff;
+}
+.main .service .service6{
+    width: 45%;
+    height: 200px;
+}
+.main .service .service6 #more-info{
+    display: flex;
+    gap: 16px;
+    height: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.main .service .service6 #more-info img{
+    width: 40px;
+    height: 40px;
+}
+
+.main .service .service6 #go-to-page{
+    padding: 12px;
+    margin: 0;
+}
+/* ------------------------------- */
+.main .social-ad{
+    font-size: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* --------------------------- */
+.main .section-4{
+    padding-bottom: 17px;
+}
+.main .section-4 .left-part #info{
+    font-size: 18px;
+}
+/* ----------------------- */
+/* ----------------------- */
+.main .footer{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    border-top: 1px solid #000;
+    background: #000;
+}
+.main .footer .foot-logo img{
+    width: 20%;
+}
+.main .footer .follow-on{
+    width: 30%;
+    font-size: 15px;
+}
+.main .footer .follow-on #insta-icon{
+    color: #ccc;
+    text-decoration: none;
+}
+.main .footer .more-foot-action{
+    font-size: 12px;
+    border-left: 1px solid #fff;
+}
+.main .footer .more-foot-action #back-to-top{
+    color: azure;
+    text-decoration: none;
+}
+ 
+ }
+
+
+ /* chat gpt code */
+
+ /* For devices smaller than 992px (tablet and below) */
+@media (max-width: 1400px) {
+  .ad-right-side {
+    position: relative;
+    display: flex;
+    flex-direction: row; /* HORIZONTALLY ALIGN ADS */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 15px;
+    margin: 20px auto;
+    background: none;
+  }
+
+  .ad-right-side .ad1,
+  .ad-right-side .ad2,
+  .ad-right-side .ad3 {
+    width: 30%;
+    min-width: 100px;
+    height: 150px;
+    border: 1px solid #000;
+    background: #ccc;
+  }
+
+  .ad-right-side span {
+    display: none; /* Hide "Advertisment" labels on small screens */
+  }
+}
+
+
+/* XX-Large devices (larger desktops) */
+/* No media query since the xxl breakpoint has no upper bound on its width */

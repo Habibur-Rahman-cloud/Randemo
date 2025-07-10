@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random Task Generator</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="random-task.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <h1>Random Task Generator</h1>
+
+      <button onclick="generateTask()">Generate Task</button>
+
+      <div class="result-box">
+        <div id="emoji">📝</div>
+        <span id="task">--</span>
+        <button class="copy-btn" onclick="copyTask()">Copy</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="random-task.js"></script>
+</body>
+</html>

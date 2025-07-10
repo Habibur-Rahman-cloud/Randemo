@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="meme-generator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   
+</head>
+<body>
+    <div class="meme-generator">
+        <label>Select an Image</label>
+        <input style="border: none; padding: 0;" type="file" id="imageFileInput">
+      
+        <label>Top Text</label>
+        <input type="text" id="topTextInput">
+      
+        <label>Bottom Text</label>
+        <input type="text" id="bottomTextInput">
+      
+        <canvas id="meme"></canvas>
+        <br>
+
+        <div class="more">
+        <button id="downloadBtn" style="display: none;">Download Meme</button>
+        <button id="clearBtn" style="display: none;">Clear</button>
+        </div>
+
+      </div>
+      <div id="adSidebar" style="display: none; position: fixed; right: 0; top: 0; width: 250px; height: 100%; background-color: #f9f9f9; box-shadow: -2px 0 5px rgba(0,0,0,0.1); padding: 10px; z-index: 999;">
+          <!-- Ad content will go here -->
+        </div>
+        <script src="meme.js"></script>
+</body>
+</html>

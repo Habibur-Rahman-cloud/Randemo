@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random Letter Generator</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="random-letter.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <h1>Random Letter Generator</h1>
+
+      <button onclick="generateLetter()">Generate Letter</button>
+
+      <div class="result-box">
+        <span id="letter">--</span>
+        <button class="copy-btn" onclick="copyLetter()">Copy</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="random-letter.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.container {
+  min-height: 100vh;
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: rgb(208, 129, 143);
+  margin-bottom: 25px;
+}
+
+.intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #dddddd;
+}
+
+.qr-section img {
+  width: 250px;
+  border: 2px solid #fff;
+  border-radius: 14px;
+  margin: 25px 0 10px 0;
+}
+
+.qr-section p {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.thanks {
+  font-style: italic;
+  color: #aaa;
+  margin-top: 20px;
+}
+
+
+/* ----------------------- */
+.footer{
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 50px;
+    border-top: 1px solid #000;
+    background: #000;
+    position: relative;
+    bottom: 0;
+}
+.footer .foot-logo img{
+    width: 25%;
+}
+.footer .follow-on{
+    font-size: 30px;
+}
+.footer .follow-on #insta-icon{
+    color: #ccc;
+    text-decoration: none;
+}
+.footer .more-foot-action{
+    border-left: 1px solid #fff;
+}
+.footer .more-foot-action #back-to-top{
+    color: azure;
+    text-decoration: none;
+}
